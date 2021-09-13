@@ -1,7 +1,4 @@
 node_modules/
 .DS_Store
 package.json.newest
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
+public/dist/
