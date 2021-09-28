@@ -11,6 +11,7 @@ import {addExpense} from './actions/expenses';
 import {setTextFilter} from './actions/filters';
 // import {default as getVisibleExpenses} from './selectors/expenses';
 import getVisibleExpenses from './selectors/expenses';
+import './firebase/firebase';
 
 const store = configureStore();
 
