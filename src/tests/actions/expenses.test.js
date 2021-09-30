@@ -1,6 +1,5 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { expect, test } from "@jest/globals";
 import { startAddExpense, addExpense, editExpense, startEditExpense, removeExpense, startRemoveExpense, setExpenses, startSetExpenses } from "../../actions/expenses";
 import expenses from '../fixtures/expenses';
 import database from '../../firebase/firebase';
