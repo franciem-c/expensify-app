@@ -20,7 +20,8 @@ module.exports = (env, argv) => {
             path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
-        mode: 'development',
+        target: ['web', 'es5'],
+        //mode: 'development',
         module: {
             rules: [{
                 test: /\.js$/,
@@ -35,7 +36,7 @@ module.exports = (env, argv) => {
                         ],
                         plugins: [
                             '@babel/plugin-transform-modules-commonjs',
-                            '@babel/plugin-proposal-class-properties',
+                            //'@babel/plugin-proposal-class-properties',
                             '@babel/plugin-proposal-object-rest-spread'
                         ]
                     }
@@ -46,7 +47,8 @@ module.exports = (env, argv) => {
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: true
+                            sourceMap: true,
+                            url: false
                         }
                     },
                     {
